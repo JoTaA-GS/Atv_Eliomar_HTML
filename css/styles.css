@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #f4f4f4;
+  }
+  
+  .navbar .menu {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+  }
+  
+  .navbar .menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .auth {
+    display: flex;
+    gap: 8px;
+  }
+
+  .logo{width: 80px;
+  }
+  
+  .create-account, .login-btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .create-account {
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #333;
+  }
+  
+  .login-btn {
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 32px 16px;
+  }
+  
+  .hero h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .card {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 120px;  /* A imagem se ajusta ao tamanho do contêiner */
+    height: auto;     /* Mantém as proporções originais */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: block;    /* Remove espaços indesejados em imagens inline */
+    margin: 0 auto;    /* Centraliza as imagens */
+    aspect-ratio: 1 / 1; /* Mantém uma proporção quadrada */
+    object-fit: cover;  /* Ajusta o conteúdo sem deformar */
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .card button {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #cc0000;
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr; 
+    }
+  
+    .menu {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .menu a {
+      margin-bottom: 8px;
+    }
+  }
+  
